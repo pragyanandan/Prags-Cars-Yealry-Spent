@@ -17,7 +17,7 @@ import warnings
 
 def run():
     st.set_page_config(
-        page_title="Prags - Capstone : Predict Yearly Spent",
+        page_title="Prags - Capstone: Predict Yearly Spent",
         page_icon="💰",
         layout="wide"
     )
