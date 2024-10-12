@@ -6,7 +6,5 @@ numpy
 pandas
 plotly
 statsmodels
-re
-time 
 sklearn.metrics 
 warnings
