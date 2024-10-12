@@ -17,7 +17,7 @@ import warnings
 
 def run():
     st.set_page_config(
-        page_title="Yearly Spent Prediction",
+        page_title="Prags - Capstone : Predict Yearly Spent",
         page_icon="💰",
         layout="wide"
     )
@@ -197,7 +197,7 @@ def run():
         if page == "Home":
 
             with header:
-                st.header('Customer Expected Annual Spend 📈💰')
+                st.header('Customer Expected Annual Spend 💰')
 
             with content:
                 st.dataframe(df.sample(frac=0.25, random_state=35).reset_index(drop=True),
@@ -205,20 +205,20 @@ def run():
 
                 st.write("***")
 
-                st.subheader("Data Summary Overview 🧐")
+                st.subheader("Data Summary Overview")
 
                 len_numerical_data = df.select_dtypes(
                     include="number").shape[1]
                 len_string_data = df.select_dtypes(include="object").shape[1]
 
                 if len_numerical_data > 0:
-                    st.subheader("Numerical Data [123]")
+                    st.subheader("Numerical Data [123..]")
 
                     data_stats = df.describe().T
                     st.table(data_stats)
 
                 if len_string_data > 0:
-                    st.subheader("String Data [𝓗]")
+                    st.subheader("String Data [qwert]")
 
                     data_stats = df.select_dtypes(
                         include="object").describe().T
