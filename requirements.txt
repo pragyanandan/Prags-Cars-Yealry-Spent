@@ -1,0 +1,12 @@
+streamlit
+streamlit_option_menu
+gunicorn
+scikit-learn
+numpy
+pandas
+plotly
+statsmodels
+re
+time 
+sklearn.metrics 
+warnings
